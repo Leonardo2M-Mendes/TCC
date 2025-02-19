@@ -5,15 +5,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #333;
 }
-
-#courses h2 {
-    margin-bottom: 30px;
-}
-
 header {
     background: #ffff; /* Laranja da logo */
     color: white;
@@ -44,9 +39,15 @@ header nav ul li a {
     font-weight: bold;
 }
 
+#courses h2 {
+    margin-bottom: 30px;
+}
+
+
+
 .hero {
-    text-align: justify;
-    padding: 1rem 20rem;
+    text-align: center;
+    padding: 1rem 5rem;
     background: #003da5; /* Azul da logo */
     color: white;
 }
@@ -140,7 +141,7 @@ button.next {
     right: 10px;
 }
 
-#contact {
+.contact {
     display: flex;
     justify-content: center;
     margin: 50px;
