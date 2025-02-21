@@ -10,7 +10,18 @@ body {
     color: #333;
 }
 header {
-    background: #ffff; /* Laranja da logo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Ajuste conforme o design */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+body {
+    padding-top: 60px; /* Ajuste conforme a altura do header para evitar sobreposição */
+}
+header {
+    background: #ffff; 
     color: white;
     padding: 1rem 0;
 }
@@ -20,8 +31,14 @@ header .container {
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
     padding: 0 1rem;
+}
+
+header nav {
+    width: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
 header nav ul {
@@ -149,6 +166,7 @@ button.next {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  
   
   .contact-info {
     width: 100%;
