@@ -62,7 +62,6 @@ header {
   
 /* Ajuste para evitar que o banner fique escondido pelo cabeçalho */
 #home {
-  margin-top: 200px; 
   padding-top: 200px; 
 }
 
