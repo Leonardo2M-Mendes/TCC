@@ -1,72 +1,85 @@
+/* Resetando margens e preenchimentos para evitar espaçamentos indesejados */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos gerais do corpo da página */
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #333;
+    padding-top: 60px; 
 }
+
+/* Estilização do cabeçalho */
 header {
-    position: fixed;
+    background-color: #fff; 
+    padding: 15px 20px; 
+    position: fixed; 
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
-    background-color: white; /* Ajuste conforme o design */
-    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
-}
-body {
-    padding-top: 60px; /* Ajuste conforme a altura do header para evitar sobreposição */
-}
-header {
-    background: #ffff; 
-    color: white;
-    padding: 1rem 0;
-}
-
-header .container {
+    z-index: 1000; 
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0;
-    padding: 0 1rem;
-}
-
-header nav {
-    width: 100vh;
+    justify-content: space-between; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+  /* Ajusta a estrutura interna do cabeçalho */
+  header .container {
     display: flex;
-    justify-content: center;
-}
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
 
-header nav ul {
-    display: flex;
+  /* Estiliza a navegação e o menu */
+  nav ul {
     list-style: none;
-}
-
-header nav ul li {
-    margin-left: 20px;
-}
-
-header nav ul li a {
-    color: black;
+    display: flex;
+    margin-right: 800px;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  nav ul li a {
     text-decoration: none;
-    font-weight: bold;
+    color: #333;
+    font-weight: 600;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #007bff;
+  }
+  
+/* Ajuste para evitar que o banner fique escondido pelo cabeçalho */
+#home {
+  margin-top: 200px; 
+  padding-top: 200px; 
 }
 
-
+/* Ajusta a posição dos títulos das seções para evitar sobreposição */
+#courses {
+    scroll-margin-top: 180px; /* Garante que o título "Nossos Cursos" não fique escondido */
+}
 #courses h2 {
     margin-bottom: 30px;
 }
 
 
-
+/* Estiliza a seção principal/banner */
 .hero {
     text-align: center;
     padding: 1rem 5rem;
-    background: #003da5; /* Azul da logo */
+    background: #003da5; 
     color: white;
 }
 
@@ -74,23 +87,28 @@ header nav ul li a {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
-    background: #f26522; /* Laranja da logo */
+    background: #f26522; 
     color: white;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
 }
 
+/* Ajuste para espaçamento interno das seções */
 section {
     padding: 2rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/* Estiliza os títulos */
  h2 {
     font-size: 28px;
     font-weight: bold;
+    
  }
 
+ /* Layout dos cursos */
 .courses-container {
     display: flex;
     gap: 1rem;
@@ -104,14 +122,14 @@ section {
     border-radius: 5px;
 }
 
-
+/* Ajustes para imagens e containers */
 .container {
     display: flex;
-    flex-direction: column;
 }
 
 .container img{
-    margin-bottom: 30px;
+    width: 150px;
+    margin: 0 0 20px 40px
 }
 
 .course-container .course {
@@ -133,6 +151,7 @@ section {
 
 }
 
+/* Botões de navegação entre cursos */
 button.prev, button.next {
     position: absolute;
     top: 50%;
@@ -153,6 +172,7 @@ button.next {
     right: 10px;
 }
 
+/* Seção de contato */
 .contact {
     display: flex;
     justify-content: center;
@@ -197,6 +217,7 @@ button.next {
     text-decoration: none;
   }
 
+  /* Ajustes para mídias sociais */
   .social-media button {
     padding: 10px;
     border: none;
@@ -266,6 +287,10 @@ button.next {
     width: 45%;
     text-align: left;
 }
+/* Ajustes para o sobre nós*/
+.about{
+    scroll-margin-top: 180px;
+}
 .about-container {
     display: flex;
     align-items: center;
@@ -303,6 +328,8 @@ button.next {
     margin: 5px;
     object-fit: contain;
 }
+
+/* Rodapé */
 footer {
     text-align: center;
     background: #003da5; /* Azul da logo */
